@@ -9,15 +9,21 @@ where the bot command was executed.
 import os
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 
 from mediawiki import MediaWiki, DisambiguationError
 wikipedia = MediaWiki()
 import random
 
 # Bot Setup
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
+# For running locally, load token from .env file.
+if not os.environ.get("DISCORD_TOKEN"):
+    from dotenv import load_dotenv
+    load_dotenv()
+    TOKEN = os.getenv("DISCORD_TOKEN")
+# For running on Heroku, load token from config vars.
+else:
+    TOKEN = os.environ.get("DISCORD_TOKEN")
+
 intents = discord.Intents().all()
 client = discord.Client(intent=intents)
 bot = commands.Bot(command_prefix=".",intents=intents)
