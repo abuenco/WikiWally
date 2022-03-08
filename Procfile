@@ -1,1 +1,1 @@
-web: gunicorn main.py:wikiwally --timeout 12
+web: gunicorn main.py:wikiwally --timeout 15
