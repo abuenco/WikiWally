@@ -1,2 +1,2 @@
-web: gunicorn app:app
+web: gunicorn wikiwally:app
 worker: python3 main.py
