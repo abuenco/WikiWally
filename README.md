@@ -1,4 +1,5 @@
-# About the Project
+# WikiWally Discord Bot
+## About the Project
 
 WikiWally is a Discord Bot that retrieves Wikipedia articles using the PyMediaWiki Python wrapper for the MediaWiki API. Users can input commands accompanied by a query to find the article that most closely matches it. Users who are feeling more adventurous can also retrieve one to ten random articles.
 
