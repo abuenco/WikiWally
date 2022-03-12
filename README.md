@@ -18,6 +18,7 @@ WikiWally is hosted online on [Heroku](https://www.heroku.com/home)... for free,
 | ```.wiki random``` | Fetches a random Wikipedia article.|
 | ```.wiki random N ```| Fetches N random Wikipedia articles, where _N_ is an integer from 1 to 10.|
 | ```.wiki options```| Provides query suggestions, which may be helpful if you can't find the article you're looking for with ```.wiki page```.|
+| ```.wiki help``` | Displays WikiWally help menu.|
 
 
 ## Software
